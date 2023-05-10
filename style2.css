@@ -1,0 +1,171 @@
+*{
+    margin :0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.4),rgba(20, 2, 16,0.6) ), url(photo2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    padding: -25% -6%;
+    width: 125px;
+
+}
+
+.nav-links{
+    flex : 1;
+    padding-top: 0%;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none ;
+    display:inline-block ;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color : #fff ;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background: #470223;
+    display : block;
+    margin: auto ;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:#470223;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size:62px ;
+
+}
+
+.text-box p {
+    margin : 10px 0 40px ;
+    font-size : 14px;
+    color: #470223;
+}
+
+
+.hero-btn {
+    display : inline-block;
+    text-decoration : none ;
+    color : #470223;
+    border : 1px solid #470223;
+    padding : 12px 34px;
+    font-size : 13px;
+    background : transparent;
+    position : relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.hero-btn:hover {
+    background: #470223;
+    color:#fff;
+}
+
+nav .fa{
+    display : none;
+}
+
+@media(max-width : 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #470223;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+/*-------- about us ------*/
+.about {
+    margin:auto;
+    text-align: center;
+}
+.about h3{
+    font-size: 25px;
+    color:#470223;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+
+.text-box2{
+    flex-basis: 50%;
+    background-image :linear-gradient(rgba(46, 2, 6, 0.6),rgba(46, 2, 6, 0.6));
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.about p{
+    color:#fff;
+}
+/*------- Footer-------*/
+
+.footer{
+    margin: auto;
+    text-align: center;
+}
+
+
+.icons{
+    color:#2c0826;
+}
+
+.fa{
+    color:#2c0826;
+}
